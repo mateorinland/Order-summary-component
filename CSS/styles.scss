@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* Desktop-only view. Largest mobile view is iPad Pro with 1366 in landscape mode */
+@media only screen and (min-width:1367px) {
+    body {
+        background-image:url("../images/pattern-background-desktop.svg");
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    body {
+        background-image: url("../images/pattern-background-mobile.svg");
+    }
+}
+
+$Pale_blue: hsl(225, 100%, 94%);
+$Bright_blue: hsl(245, 75%, 52%);
+$Very_pale_blue: hsl(225, 100%, 98%);
+$Desaturated_blue: hsl(224, 23%, 55%);
+$Dark_blue: hsl(223, 47%, 23%);
+$Discrete_blue: hsl(228, 45%, 44%);
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: $Pale_blue;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    .order-text {
+        h1 {
+            font-size: 1.7rem;
+            padding: 13% 0 5% 0;
+        }
+    }
+    .product-summary {
+        display: flex;
+        background-color: $Very_pale_blue;
+        border-radius: 7px;
+        margin: 5%;
+        padding: 5% 18%;
+        img {
+            position: relative;
+            left: -25%
+        }
+        div {
+            position: relative;
+            left: -20%;
+        }
+        a {
+            color: $Bright_blue;
+            margin-top: 7%;
+            position: relative;
+            left: 30%;
+        }
+        a:hover {
+            color: adjust-color($color: $Bright_blue, $hue: 0, $saturation: 0%, $lightness: 10%, $alpha: 1.0);
+            text-decoration: none;
+        }
+    }
+    .pay-button {
+        background-color: $Bright_blue;
+        color: white;
+        border-radius: 7px;
+        box-shadow: 5px 20px 15px $Pale_blue;
+        margin: 2%;
+    }
+    .pay-button:hover {
+        background-color: adjust-color($color: $Bright_blue, $hue: 0, $saturation: 0%, $lightness: 10%, $alpha: 1.0);
+    }
+    .cancel-button {
+        background-color: transparent;
+        color: $Desaturated_blue;
+        margin: 2% 2% 8% 2%;
+    }
+    .cancel-button:hover {
+        color: $Dark_blue;
+    }
+}
+
+.dark-text {
+    color: $Dark_blue;
+    font-weight: 900;
+}
+
+.light-text {
+    color: $Desaturated_blue;
+}
+
+a, button {
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+button {
+    border-style: none;
+    padding: 2.5% 20%;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    a {
+        color: $Discrete_blue;
+        font-weight: 500;
+        font-size: 11px;
+    }
+}
