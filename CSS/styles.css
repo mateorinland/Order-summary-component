@@ -27,6 +27,13 @@ body {
   overflow: hidden;
   box-shadow: 5px 25px 15px hsl(225deg, 100%, 90%);
 }
+.card .hero-image {
+  width: 100%;
+  height: 100%;
+}
+.card .order-text {
+  padding: 0 2rem;
+}
 .card .order-text h1 {
   font-weight: 800;
   font-size: 1.4rem;
@@ -44,6 +51,7 @@ body {
   border-radius: 7px;
   margin: 1rem;
   padding: 1rem 1rem;
+  width: 85%;
 }
 .card .product-summary img {
   height: 50%;
@@ -129,7 +137,6 @@ small {
     font-size: 1.8rem;
   }
   .card .product-summary {
-    width: 85%;
     justify-content: space-between;
   }
 }/*# sourceMappingURL=styles.css.map */
