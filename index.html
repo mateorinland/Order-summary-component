@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Frontend Mentor challenge for web development. This one is a card that summarizes a purchase
+      of an annual plan for a music, audiobook and podcasts service with the options of proceeding to payment
+      or canceling the order."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Order summary card</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="card">
-        <img class="hero-image" src="images/illustration-hero.svg" alt="A happy woman dances while she listens to music on her smartphone with headphones.">
+      <img
+        class="hero-image"
+        src="images/illustration-hero.svg"
+        alt="A happy woman dances while she listens to music on her smartphone with headphones."
+      />
 
-        <div class="order-text">
-            <h1 class="dark-text">Order Summary</h1>
-            <small class="light-text">You can now listen to millions of songs,
-            audiobooks, and podcasts on any device
-            anywhere you like!</small>
+      <div class="order-text">
+        <h1 class="title">Order Summary</h1>
+        <p class="info"
+          >You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!</p
+        >
+      </div>
+
+      <div class="product-summary">
+        <div class="flex-container">
+          <img
+            class="product-icon"
+            src="images/icon-music.svg"
+            alt="A musical note."
+          />
+          <div class="product-text-container">
+            <p class="period-info">Annual Plan</p>
+            <p class="price-info">$59.99/year</p>
+          </div>
         </div>
+        <a class="change-link" href="#">Change</a>
+      </div>
 
-        <div class="product-summary">
-            <div>
-                <img class="product-icon" src="images/icon-music.svg" alt="A musical note.">
-                <div class="product-text-container">
-                    <small class="dark-text">Annual Plan</small>
-                    <small class="light-text">$59.99/year</small>
-                </div>
-            </div>
-            <a href="#">Change</a>
-        </div>
+      <button class="pay-button">Proceed to Payment</button>
 
-        <button class="pay-button">Proceed to Payment</button>
-        <button class="cancel-button">Cancel Order</button>
+      <button class="cancel-button">Cancel Order</button>
     </main>
-    <footer class="attribution">
-        Coded by <a href="https://www.linkedin.com/in/mateo-rinland-9b1a93bb/">Mateo Rinland</a>.
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <footer>
+      <p class="attribution">
+        Coded by
+        <a
+          class="attribution-link"
+          href="https://www.linkedin.com/in/mateo-rinland-9b1a93bb/"
+          aria-label="Mateo Rinland's LinkedIn profile"
+          >Mateo Rinland</a
+        >. Challenge by
+        <a
+          class="attribution-link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
